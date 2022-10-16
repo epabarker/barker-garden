@@ -9,6 +9,7 @@
 // typography
 html {
   scroll-behavior: smooth;
+  background-color: #eee8d5;
   &:lang(ar) {
     & p, & h1, & h2, & h3, article, header {
       direction: rtl;
@@ -34,12 +35,13 @@ body {
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: var(--light);
+  background-color: #fdf6e3;
 }
 
-h1, h2, h3, h4, h5, h6, thead {
+
+h1 {
   font-family: var(--font-header);
-  color: var(--dark);
+  color: #d33682;
   font-weight: revert;
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
@@ -49,6 +51,39 @@ h1, h2, h3, h4, h5, h6, thead {
   }
 }
 
+h2, h3, h4, h5, h6, thead {
+  font-family: var(--font-header);
+  color: #859900;
+  font-weight: revert;
+  margin: 2rem 0 0;
+  padding: 2rem auto 1rem;
+
+  &:hover > .hanchor {
+    color: var(--secondary);
+  }
+}
+
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.4em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.3em;
+}
+h6 {
+  font-size: 1.15em;
+}
+
+
+
 .hanchor {
   font-family: var(--font-header);
   opacity: 0.8;
@@ -56,13 +91,28 @@ h1, h2, h3, h4, h5, h6, thead {
   color: var(--dark);
 }
 
-p, ul, text, a, tr, td, li, ol, ul {
+p, ul, text, tr, td, li, ol, ul {
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
   font-weight: revert;
   margin: revert;
   padding: revert;
+}
+
+a {
+  font-family: var(--font-body);
+  color: #b58900;
+  fill: #b58900;
+  font-weight: revert;
+  margin: revert;
+  padding: revert;
+}
+a:visited {
+  color: #cb4b16;
+}
+a:hover {
+  color: #cb4b16;
 }
 
 tbody, li, p {
@@ -214,6 +264,12 @@ article {
 .tags {
   list-style: none;
   padding-left: 0;
+  background-color: #eee8d5;
+  color: #d33682;
+  padding: 0 0.2em;
+  -webkit-border-radius: 0.35em;
+  -moz-border-radius: 0.35em;
+  border-radius: 0.35em;
 
   & .meta {
     margin: 1.5em 0;
@@ -273,8 +329,13 @@ a {
 pre {
   font-family: var(--font-mono);
   padding: 0.75em;
+  border: 1pt solid #93a1a1;
   border-radius: 3px;
   overflow-x: scroll;
+  background-color: #fdf6e3;
+  color: #657b83;
+  padding: 1em;
+  box-shadow: 5pt 5pt 8pt #eee8d5;
 }
 
 code {
@@ -282,7 +343,7 @@ code {
   font-size: 0.85em;
   padding: 0.15em 0.3em;
   border-radius: 5px;
-  background: var(--lightgray);
+  background-color: #eee8d5;
 }
 
 @keyframes fadeIn {
