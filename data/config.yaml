@@ -1,4 +1,4 @@
-name: Jacky Zhao
+name: Ed Barker
 enableToc: true
 openToc: false
 enableLinkPreview: true
@@ -11,16 +11,11 @@ enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
 enableGitHubEdit: true
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+GitHubLink: https://github.com/epabarker/epabarker.github.io/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Ed Barker's personal website with blog posts about Data Science in Healthcare, Woodwork projects, and short stories
 page_title:
-  "🪴 Quartz 3.3"
+  "Barker's Digital Garden"
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: Github
-    link: https://github.com/jackyzha0
